@@ -3,12 +3,12 @@
 
 CREATE TABLE IF NOT EXISTS customers (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR(128),
-    lastname VARCHAR(155),
-    phone VARCHAR(16),
-    email VARCHAR(32),
-    address VARCHAR(200),
-    city VARCHAR(64),
-    state VARCHAR(2),
-    birth_date DATETIME
+    name VARCHAR(128) NOT NULL,
+    lastname VARCHAR(155) NOT NULL,
+    phone VARCHAR(16) NOT NULL,
+    email VARCHAR(32) NOT NULL,
+    address VARCHAR(200) NOT NULL,
+    city VARCHAR(64) NOT NULL,
+    state VARCHAR(2) NOT NULL,
+    birth_date DATETIME NOT NULL
 );
